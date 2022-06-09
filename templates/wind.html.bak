@@ -1,0 +1,6 @@
+<html>
+<head><title>Current Wind Speed</title></head>
+<body>
+<h1> The current wind speed in {{ location }} is {{ wind }}knts at {{ direction }} deg. </h1> 
+</body>
+</html>
