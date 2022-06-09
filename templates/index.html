@@ -1,13 +1,24 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<title>Request Example</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Jones">
+		<title>Weather App Index</title>
+		<link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/appstyles.css') }}"/>
 	</head>
 	
 	<body>
-		<form method="POST" action="/temperature">
-			Location : <input type="text" name="location">
-			<input type="submit">
-			<button type="submit" formaction="/wind">Wind Speed</button>
+		<h1> Wind Speed and Temperature App</h1>
+		<h2> Enter a location and select Wind Speed or Temperature</h2>
+		<form method="POST" action="/temperature" class="form">
+			<label for="location">Location:</label>
+			<input type="text" name="location">
+			<br>
+			<br>
+			<div>
+				<button type="submit">Temperature</button>
+				<button type="submit" formaction="/wind">Wind Speed</button>
+			</div>
 		</form>
 
 	</body>

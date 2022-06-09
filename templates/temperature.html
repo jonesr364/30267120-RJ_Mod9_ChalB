@@ -1,6 +1,13 @@
-<html>
-<head><title>Current Temperature</title></head>
-<body>
-<h1> The current temperature (C) in {{ location }} is : {{ temp }} degrees. </h1>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Current Temperature at location</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Jones">
+		<link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/appstyles.css') }}"/>
+	</head>
+	<body>
+		<h1> Temperature </h1>
+		<h2 class="data"> The current temperature in {{ location }} is {{ temp }} degrees Celcius. </h2>
+	</body>
 </html>
