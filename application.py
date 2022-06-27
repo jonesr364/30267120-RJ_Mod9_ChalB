@@ -21,7 +21,6 @@ directiondata = [
 @app.route('/temperature', methods=['POST'])
 def weather():
     location = request.form['location']
-   # temp = random.choice (temperaturedata)
     wind = random.choice (winddata)
     direction = random.choice (directiondata)
     return render_template('temperature.html', temp = random.choice (temperaturedata), wind=wind, direction=direction, location=location)
